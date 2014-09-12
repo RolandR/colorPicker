@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<title>
+			ColorPicker
+		</title>
+		<link href="./colorPicker.css" rel="stylesheet" type="text/css" media="all" />
+		<style>
+			#colorPickerParent{
+				border: 1px #000000 solid;
+				height: 150px;
+				width: 150px;
+				color: #FFFFFF;
+				text-shadow: 1px 1px #000000;
+				font-family: sans-serif;
+				font-size: 25px;
+				padding: 10px;
+				cursor: pointer;
+			}
+			
+			.cp{
+				margin: 50px 0px 0px 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="colorPickerParent">
+			Click me!
+		</div>
+		<script type="text/javascript" src="./jquery.js"></script>
+		<script type="text/javascript" src="./colorPicker.js"></script>
+		<script type="text/javascript">
+			$("#colorPickerParent").click(click);
+			
+			function setBG(c){
+				color = c;
+				$("#colorPickerParent").css("backgroundColor", "rgb("+c[0]+","+c[1]+","+c[2]+")");
+			}
+			
+			var color = [255, 255, 255];
+			
+			function click(e){
+				var colorPicker = new ColorPicker($("#colorPickerParent"), setBG, color);
+			}
+		</script>
+	</body>
+</html>

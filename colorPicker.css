@@ -1,0 +1,62 @@
+.cp, .cp *{
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	box-sizing: border-box;
+}
+
+.cp{
+	width: 200px;
+	border: 1px #000000 solid;
+	background-color: #777777;
+	font-family: sans-serif;
+	color: #FFFFFF;
+	padding: 5px;
+	font-size: 17px;
+	cursor: default;
+	text-shadow: none;
+}
+
+.cp label{
+	display: inline-block;
+	width: 45px;
+	text-align: right;
+	margin-right: 5px;
+}
+
+.cp input[type="range"]{
+	display: inline-block;
+	width: 130px;
+	position: relative;
+	top: 7px;
+}
+
+.cp-r{
+	color: #FF0000;
+}
+
+.cp-colorPreview{
+	border: 1px #000000 solid;
+	height: 50px;
+	width: 70px;
+	margin-top: 15px;
+	display: inline-block;
+}
+
+.cp-button{
+	display: inline-block;
+	height: 25px;
+	width: 50px;
+	vertical-align: middle;
+	margin-left: 5px;
+	margin-top: -17px;
+	border: 1px #000000 solid;
+	background: none;
+	background-color: rgba(255, 255, 255, 0.6);
+	box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.3) inset;
+	cursor: pointer;
+}
+
+.cp-button:hover{
+	background-color: rgba(255, 255, 255, 0.9);
+}
